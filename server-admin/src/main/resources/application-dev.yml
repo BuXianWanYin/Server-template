@@ -1,0 +1,79 @@
+server-config:
+  profile: D:/server/uploadPath
+  addressEnabled: false
+  captchaType: math
+  pathRoot: true
+
+server:
+  port: 8080
+
+redis:
+  host: localhost
+  port: 6379
+  database: 0
+  timeout: 10s
+
+token:
+  header: Authorization
+  secret: abcdefghijklmnopqrstuvwxyz
+  expireTime: 30
+
+swagger:
+  enabled: true
+  pathMapping: /
+
+user:
+  password:
+    maxRetryCount: 5
+    lockTime: 10
+
+datasource:
+  host: localhost
+  port: 3306
+  database: fish-dish-server
+  username: root
+  password: 123456
+
+mail:
+  host: smtp.qq.com
+  username: 851543@qq.com
+  password: qxjtglqhflmdcacb
+
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+  timeout: 5000
+
+ollama:
+  base-url: http://192.168.31.37:11434
+  model-name: qwen3:32b
+  temperature: 0.8
+  timeout: 180
+  think: false
+  online-url: http://192.168.31.170:11434
+  online-model: qwen3:8b
+
+mqtt:
+  server-uri: tcp://localhost:1883
+  client-id: fish-dish-server
+  username: guest
+  password: guest
+  default-topic: /fish-dish/data
+  completion-timeout: 5000
+
+mqttclient:
+  mqttbroker: ws://192.168.31.168:15675/ws
+  lighttopic: /fish-dish/light
+  username: guest
+  password: guest
+
+fisco:
+  enabled: false
+
+codepath:
+  path: http://192.168.31.231:8888/#/trace?traceId=
+
+online:
+  enabled: false
