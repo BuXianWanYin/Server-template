@@ -11,7 +11,7 @@ redis:
   host: localhost
   port: 6379
   database: 0
-  timeout: 10s
+  timeout: 15s
 
 token:
   header: Authorization
@@ -36,7 +36,7 @@ datasource:
 
 mail:
   host: smtp.qq.com
-  username: 851543@qq.com
+  username: 2644832053@qq.com
   password: qxjtglqhflmdcacb
 
 rabbitmq:
@@ -45,15 +45,6 @@ rabbitmq:
   username: guest
   password: guest
   timeout: 5000
-
-ollama:
-  base-url: http://192.168.31.37:11434
-  model-name: qwen3:32b
-  temperature: 0.8
-  timeout: 180
-  think: false
-  online-url: http://192.168.31.170:11434
-  online-model: qwen3:8b
 
 mqtt:
   server-uri: tcp://localhost:1883
